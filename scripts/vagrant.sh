@@ -11,6 +11,7 @@ echo 'ENVIRONMENT_NAME="vagrant"' | sudo tee --append $logstash_config
 echo "ES_URL=http://localhost:9200" | sudo tee --append $logstash_config
 echo "ES_USER=logstash" | sudo tee --append $logstash_config
 echo "ES_PASS=keep_it_stashy" | sudo tee --append $logstash_config
+echo "JAEGER_URL=http://localhost:9411/api/v2/spans"| sudo tee --append $env_config
 
 # clone the config into the environment so that manually running the service works
 cat $logstash_config >> $environment_config

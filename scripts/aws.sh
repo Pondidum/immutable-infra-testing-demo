@@ -19,6 +19,7 @@ echo "ES_URL=${ElasticUrl}" | sudo tee --append $env_config
 echo "ES_USER=${ElasticUser}" | sudo tee --append $env_config
 echo "ES_PASS=${ElasticPassword}" | sudo tee --append $env_config
 
-sudo systemctl start logstash.service
+echo "JAEGER_URL=${JaegerUrl}" | sudo tee --append $env_config
 
+sudo systemctl start logstash.service
 '
