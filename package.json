@@ -14,6 +14,7 @@
     "babel-jest": "^23.6.0",
     "babel-preset-env": "^1.7.0",
     "jest": "^23.6.0",
+    "jsondiffpatch": "^0.3.11",
     "regenerator-runtime": "^0.13.1"
   }
 }
